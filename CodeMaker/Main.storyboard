@@ -381,12 +381,13 @@
                     <connections>
                         <outlet property="codeInfo" destination="myL-fi-HNc" id="Dx2-8V-QRw"/>
                         <outlet property="codeTextField" destination="wyS-pM-64K" id="CbJ-Yg-QoG"/>
+                        <outlet property="numberPicker" destination="oUQ-r3-cf3" id="hMf-f2-RAq"/>
                         <outlet property="originalInfo" destination="8B0-kX-yIX" id="mn5-VK-sri"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884.5" y="-860.5"/>
+            <point key="canvasLocation" x="-912.5" y="-869.5"/>
         </scene>
     </scenes>
     <resources>

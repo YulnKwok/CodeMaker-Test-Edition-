@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource{
     
+    @IBOutlet weak var numberPicker: UIPickerView! //the picker for special code
     @IBOutlet weak var codeTextField: UITextView!
     var wordStack = ""
     var codeStack = ""
     var singleCharater = ""
     var switchButtonPressed = false
+    
+    private let firstComponent  = 0
+    private let secondComponent = 1
+    private let thirdComponent  = 2
+    
+    private let firstLineOfNumber  = ["0","1","2","3","4","5","6","7","8","9"]
+    private let secondLineOfNumber = ["0","1","2","3","4","5","6","7","8","9"]
+    private let thirdLineOfNumber  = ["0","1","2","3","4","5","6","7","8","9"]
 
     @IBOutlet weak var originalInfo: UILabel!
     @IBOutlet weak var codeInfo: UILabel!
@@ -87,6 +96,16 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 10
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if component == firstComponent{
+            return firstLineOfNumber[row]
+        }else if component == secondComponent{
+            return secondLineOfNumber[row]
+        }else{
+            return thirdLineOfNumber[row]
+        }
     }
     
     override func viewDidLoad() {
