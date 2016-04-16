@@ -45,8 +45,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     @IBAction func switchFromWord(sender: UIButton) {
         let selectedRow = numberPicker.selectedRowInComponent(firstComponent)
         let selectedRowString = "\(selectedRow)"
-        
-        
+        let codeWheel = CodeWheel()
+        let transformInfo = codeWheel.switchFromOriginalInfo(wheelNumber:selectedRowString,originalString:wordStack)
+        codeTextField.text! = transformInfo!
         
 //        if !switchButtonPressed{
 //        if !wordStack.isEmpty{
