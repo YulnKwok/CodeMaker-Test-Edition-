@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D194F461CC2897B00078307 /* CodeWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D194F451CC2897B00078307 /* CodeWheel.swift */; };
 		8D1F4FCA1C2C057B009E22E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */; };
 		8D1F4FCC1C2C057B009E22E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */; };
 		8D1F4FD11C2C057B009E22E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F4FD01C2C057B009E22E4 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D194F451CC2897B00078307 /* CodeWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeWheel.swift; sourceTree = "<group>"; };
 		8D1F4FC61C2C057B009E22E4 /* CodeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */,
 				8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */,
+				8D194F451CC2897B00078307 /* CodeWheel.swift */,
 				8D2C81E51C79C6E80042DCAE /* CoderTabBarViewController.swift */,
 				8D1F4FD21C2C057B009E22E4 /* LaunchScreen.storyboard */,
 				8D1F4FF71C2C05ED009E22E4 /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				8D2C81E61C79C6E80042DCAE /* CoderTabBarViewController.swift in Sources */,
 				8D1F4FCC1C2C057B009E22E4 /* ViewController.swift in Sources */,
+				8D194F461CC2897B00078307 /* CodeWheel.swift in Sources */,
 				8D1F4FCA1C2C057B009E22E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
