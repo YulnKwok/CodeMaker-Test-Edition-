@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D194F461CC2897B00078307 /* CodeWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D194F451CC2897B00078307 /* CodeWheel.swift */; };
+		8D194F461CC2897B00078307 /* CodeWheel0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D194F451CC2897B00078307 /* CodeWheel0.swift */; };
 		8D1F4FCA1C2C057B009E22E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */; };
 		8D1F4FCC1C2C057B009E22E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */; };
 		8D1F4FD11C2C057B009E22E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F4FD01C2C057B009E22E4 /* Assets.xcassets */; };
@@ -16,6 +16,12 @@
 		8D1F4FEA1C2C057B009E22E4 /* CodeMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F4FE91C2C057B009E22E4 /* CodeMakerUITests.swift */; };
 		8D1F4FF81C2C05ED009E22E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F4FF71C2C05ED009E22E4 /* Main.storyboard */; };
 		8D2C81E61C79C6E80042DCAE /* CoderTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C81E51C79C6E80042DCAE /* CoderTabBarViewController.swift */; };
+		8DB436D61CC3182A00D142EE /* CodeWheel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436D51CC3182A00D142EE /* CodeWheel1.swift */; };
+		8DB436D81CC319D700D142EE /* CodeWheel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436D71CC319D700D142EE /* CodeWheel2.swift */; };
+		8DB436DB1CC39A2D00D142EE /* DecodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436DA1CC39A2D00D142EE /* DecodeViewController.swift */; };
+		8DB436E01CC39DE900D142EE /* DecodeWheel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436DF1CC39DE900D142EE /* DecodeWheel2.swift */; };
+		8DB436E21CC39E0100D142EE /* DecodeWheel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436E11CC39E0100D142EE /* DecodeWheel1.swift */; };
+		8DB436E41CC39E1000D142EE /* DecodeWheel0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB436E31CC39E1000D142EE /* DecodeWheel0.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D194F451CC2897B00078307 /* CodeWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeWheel.swift; sourceTree = "<group>"; };
+		8D194F451CC2897B00078307 /* CodeWheel0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeWheel0.swift; sourceTree = "<group>"; };
 		8D1F4FC61C2C057B009E22E4 /* CodeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		8D1F4FEB1C2C057B009E22E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1F4FF71C2C05ED009E22E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8D2C81E51C79C6E80042DCAE /* CoderTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoderTabBarViewController.swift; sourceTree = "<group>"; };
+		8DB436D51CC3182A00D142EE /* CodeWheel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeWheel1.swift; sourceTree = "<group>"; };
+		8DB436D71CC319D700D142EE /* CodeWheel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeWheel2.swift; sourceTree = "<group>"; };
+		8DB436DA1CC39A2D00D142EE /* DecodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeViewController.swift; sourceTree = "<group>"; };
+		8DB436DF1CC39DE900D142EE /* DecodeWheel2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeWheel2.swift; sourceTree = "<group>"; };
+		8DB436E11CC39E0100D142EE /* DecodeWheel1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeWheel1.swift; sourceTree = "<group>"; };
+		8DB436E31CC39E1000D142EE /* DecodeWheel0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeWheel0.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				8D1F4FC91C2C057B009E22E4 /* AppDelegate.swift */,
-				8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */,
-				8D194F451CC2897B00078307 /* CodeWheel.swift */,
 				8D2C81E51C79C6E80042DCAE /* CoderTabBarViewController.swift */,
+				8D1F4FCB1C2C057B009E22E4 /* ViewController.swift */,
+				8DB436DA1CC39A2D00D142EE /* DecodeViewController.swift */,
+				8DB436DE1CC39DAF00D142EE /* DecodeWheels */,
+				8DB436D91CC3438600D142EE /* CodeWheels */,
 				8D1F4FD21C2C057B009E22E4 /* LaunchScreen.storyboard */,
 				8D1F4FF71C2C05ED009E22E4 /* Main.storyboard */,
 				8D1F4FD01C2C057B009E22E4 /* Assets.xcassets */,
@@ -129,6 +143,26 @@
 				8D1F4FEB1C2C057B009E22E4 /* Info.plist */,
 			);
 			path = CodeMakerUITests;
+			sourceTree = "<group>";
+		};
+		8DB436D91CC3438600D142EE /* CodeWheels */ = {
+			isa = PBXGroup;
+			children = (
+				8D194F451CC2897B00078307 /* CodeWheel0.swift */,
+				8DB436D51CC3182A00D142EE /* CodeWheel1.swift */,
+				8DB436D71CC319D700D142EE /* CodeWheel2.swift */,
+			);
+			name = CodeWheels;
+			sourceTree = "<group>";
+		};
+		8DB436DE1CC39DAF00D142EE /* DecodeWheels */ = {
+			isa = PBXGroup;
+			children = (
+				8DB436DF1CC39DE900D142EE /* DecodeWheel2.swift */,
+				8DB436E11CC39E0100D142EE /* DecodeWheel1.swift */,
+				8DB436E31CC39E1000D142EE /* DecodeWheel0.swift */,
+			);
+			name = DecodeWheels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB436E01CC39DE900D142EE /* DecodeWheel2.swift in Sources */,
 				8D2C81E61C79C6E80042DCAE /* CoderTabBarViewController.swift in Sources */,
+				8DB436DB1CC39A2D00D142EE /* DecodeViewController.swift in Sources */,
+				8DB436E21CC39E0100D142EE /* DecodeWheel1.swift in Sources */,
 				8D1F4FCC1C2C057B009E22E4 /* ViewController.swift in Sources */,
-				8D194F461CC2897B00078307 /* CodeWheel.swift in Sources */,
+				8D194F461CC2897B00078307 /* CodeWheel0.swift in Sources */,
+				8DB436E41CC39E1000D142EE /* DecodeWheel0.swift in Sources */,
+				8DB436D81CC319D700D142EE /* CodeWheel2.swift in Sources */,
 				8D1F4FCA1C2C057B009E22E4 /* AppDelegate.swift in Sources */,
+				8DB436D61CC3182A00D142EE /* CodeWheel1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +437,7 @@
 		8D1F4FEF1C2C057B009E22E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CodeMaker/Info.plist;
@@ -411,6 +452,7 @@
 		8D1F4FF01C2C057B009E22E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CodeMaker/Info.plist;

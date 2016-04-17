@@ -37,17 +37,29 @@ class ViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         wordStack = ""
         codeStack = ""
         originalInfo.text! = wordStack
-        //codeInfo.text! = codeStack
+        codeTextField.text! = wordStack
         switchButtonPressed = false
     }
     
     
     @IBAction func switchFromWord(sender: UIButton) {
-        let selectedRow = numberPicker.selectedRowInComponent(firstComponent)
-        let selectedRowString = "\(selectedRow)"
+        //the first wheel
+        let selectedRow0 = numberPicker.selectedRowInComponent(firstComponent)
+        let selectedRowString0 = "\(selectedRow0)"
         let codeWheel = CodeWheel()
-        let transformInfo = codeWheel.switchFromOriginalInfo(wheelNumber:selectedRowString,originalString:wordStack)
-        codeTextField.text! = transformInfo!
+        let transformInfo0 = codeWheel.switchFromOriginalInfo(wheelNumber:selectedRowString0,originalString:wordStack)
+        //the second wheel
+        let selectedRow1 = numberPicker.selectedRowInComponent(secondComponent)
+        let selectedRowString1 = "\(selectedRow1)"
+        let codeWheel1 = CodeWheel1()
+        let transformInfo1 = codeWheel1.switchFromOriginalInfoByCodeWheel1(wheelNumber:selectedRowString1,originalString:transformInfo0!)
+        //the third wheel
+        let selectedRow2 = numberPicker.selectedRowInComponent(thirdComponent)
+        let selectedRowString2 = "\(selectedRow2)"
+        let codeWheel2 = CodeWheel2()
+        let transformInfo2 = codeWheel2.switchFromOriginalInfoByCodeWheel2(wheelNumber:selectedRowString2,originalString:transformInfo1!)
+        
+        codeTextField.text! = transformInfo2!
         
 //        if !switchButtonPressed{
 //        if !wordStack.isEmpty{
