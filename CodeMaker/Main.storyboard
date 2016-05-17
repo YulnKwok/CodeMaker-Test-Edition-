@@ -35,44 +35,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-kS-lOD">
-                                <rect key="frame" x="163" y="269" width="47" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pvE-kS-lOD">
+                                <rect key="frame" x="147" y="279" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Switch" backgroundImage="Image"/>
+                                <state key="normal" backgroundImage="Image-1">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Switch">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="14" name="HannotateSC-W7"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="switchFromWord:" destination="vzc-cj-2LY" eventType="touchUpInside" id="Vf1-7I-2HQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-mX-WyB">
-                                <rect key="frame" x="275" y="269" width="47" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Clean" backgroundImage="Image"/>
+                                <rect key="frame" x="262" y="279" width="80" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clean" backgroundImage="Image-1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="cleanAllInfo:" destination="vzc-cj-2LY" eventType="touchUpInside" id="MdH-1m-zs7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtH-KU-OYa">
-                                <rect key="frame" x="51" y="269" width="47" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Code" backgroundImage="Image"/>
+                                <rect key="frame" x="36" y="279" width="80" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Code" backgroundImage="Image-1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAg-LQ-JPk">
-                                <rect key="frame" x="19" y="195" width="335" height="59"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="vzc-cj-2LY" id="1dC-kW-rfA"/>
-                                    <outlet property="delegate" destination="vzc-cj-2LY" id="EtB-Zy-nQV"/>
-                                </connections>
-                            </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="请输入" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="beL-4i-0np">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your Information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="beL-4i-0np">
                                 <rect key="frame" x="19" y="45" width="335" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ak-vD-8BT">
-                                <rect key="frame" x="313" y="424" width="48" height="47"/>
+                                <rect key="frame" x="134" y="472" width="35" height="35"/>
                                 <state key="normal" title="f" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -81,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m14-li-ikk">
-                                <rect key="frame" x="25" y="473" width="48" height="47"/>
+                                <rect key="frame" x="170" y="472" width="35" height="35"/>
                                 <state key="normal" title="g" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -90,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-IA-Iej">
-                                <rect key="frame" x="81" y="473" width="48" height="47"/>
+                                <rect key="frame" x="207" y="472" width="35" height="35"/>
                                 <state key="normal" title="h" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -99,7 +104,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zak-i1-Efm">
-                                <rect key="frame" x="7" y="424" width="48" height="47"/>
+                                <rect key="frame" x="262" y="429" width="35" height="35"/>
                                 <state key="normal" title="i" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -108,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJS-iC-D51">
-                                <rect key="frame" x="137" y="473" width="48" height="47"/>
+                                <rect key="frame" x="245" y="472" width="35" height="35"/>
                                 <state key="normal" title="j" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -117,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjR-D0-Eoz">
-                                <rect key="frame" x="192" y="473" width="48" height="47"/>
+                                <rect key="frame" x="281" y="472" width="35" height="35"/>
                                 <state key="normal" title="k" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -126,7 +131,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQ6-n4-6LU">
-                                <rect key="frame" x="0.0" y="376" width="48" height="47"/>
+                                <rect key="frame" x="3" y="429" width="35" height="35"/>
                                 <state key="normal" title="q" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -135,7 +140,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmK-Tq-vDa">
-                                <rect key="frame" x="150" y="376" width="48" height="47"/>
+                                <rect key="frame" x="115" y="429" width="35" height="35"/>
                                 <state key="normal" title="r" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -144,7 +149,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSQ-Ed-nU7">
-                                <rect key="frame" x="206" y="424" width="48" height="47"/>
+                                <rect key="frame" x="59" y="472" width="35" height="35"/>
                                 <state key="normal" title="s" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -153,7 +158,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-0w-aCv">
-                                <rect key="frame" x="206" y="376" width="48" height="47"/>
+                                <rect key="frame" x="152" y="429" width="35" height="35"/>
                                 <state key="normal" title="t" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -162,7 +167,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-y2-UtH">
-                                <rect key="frame" x="301" y="376" width="48" height="47"/>
+                                <rect key="frame" x="226" y="429" width="35" height="35"/>
                                 <state key="normal" title="u" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -171,7 +176,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6My-1R-7Xn">
-                                <rect key="frame" x="157" y="549" width="48" height="47"/>
+                                <rect key="frame" x="169" y="515" width="35" height="35"/>
                                 <state key="normal" title="v" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -180,7 +185,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-XT-T37">
-                                <rect key="frame" x="50" y="376" width="48" height="47"/>
+                                <rect key="frame" x="40" y="429" width="35" height="35"/>
                                 <state key="normal" title="w" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -189,7 +194,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqi-8q-g1T">
-                                <rect key="frame" x="57" y="549" width="48" height="47"/>
+                                <rect key="frame" x="98" y="515" width="35" height="35"/>
                                 <state key="normal" title="x" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -198,7 +203,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0Y-iq-f6s">
-                                <rect key="frame" x="255" y="376" width="48" height="47"/>
+                                <rect key="frame" x="189" y="429" width="35" height="35"/>
                                 <state key="normal" title="y" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -207,7 +212,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4z-vH-LPa">
-                                <rect key="frame" x="248" y="473" width="48" height="47"/>
+                                <rect key="frame" x="320" y="472" width="35" height="35"/>
                                 <state key="normal" title="l" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -216,7 +221,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmu-Vf-sis">
-                                <rect key="frame" x="255" y="549" width="48" height="47"/>
+                                <rect key="frame" x="244" y="515" width="35" height="35"/>
                                 <state key="normal" title="n" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -225,7 +230,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeS-1k-1ia">
-                                <rect key="frame" x="57" y="424" width="48" height="47"/>
+                                <rect key="frame" x="300" y="429" width="35" height="35"/>
                                 <state key="normal" title="o" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -234,7 +239,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4i-dy-qLD">
-                                <rect key="frame" x="207" y="549" width="47" height="47"/>
+                                <rect key="frame" x="206" y="515" width="35" height="35"/>
                                 <state key="normal" title="b" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -243,7 +248,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-HN-PGz">
-                                <rect key="frame" x="106" y="549" width="48" height="47"/>
+                                <rect key="frame" x="133" y="515" width="35" height="35"/>
                                 <state key="normal" title="c" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -252,7 +257,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIU-d6-T1V">
-                                <rect key="frame" x="262" y="424" width="48" height="47"/>
+                                <rect key="frame" x="99" y="472" width="35" height="35"/>
                                 <state key="normal" title="d" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -261,7 +266,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEu-NQ-nhr">
-                                <rect key="frame" x="99" y="376" width="48" height="47"/>
+                                <rect key="frame" x="78" y="429" width="35" height="35"/>
                                 <state key="normal" title="e" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -270,7 +275,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lx-UG-wDM">
-                                <rect key="frame" x="157" y="424" width="48" height="47"/>
+                                <rect key="frame" x="20" y="472" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="a" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -280,7 +285,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReM-P7-mGd">
-                                <rect key="frame" x="106" y="424" width="48" height="47"/>
+                                <rect key="frame" x="337" y="429" width="35" height="35"/>
                                 <state key="normal" title="p" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -289,7 +294,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oen-fX-L5o">
-                                <rect key="frame" x="7" y="549" width="48" height="47"/>
+                                <rect key="frame" x="58" y="515" width="35" height="35"/>
                                 <state key="normal" title="z" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -298,9 +303,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu1-BE-ywG">
-                                <rect key="frame" x="69" y="331" width="25" height="24"/>
+                                <rect key="frame" x="40" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="1" backgroundImage="Image">
+                                <state key="normal" title="1" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -308,9 +313,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-gd-7UQ">
-                                <rect key="frame" x="99" y="331" width="25" height="24"/>
+                                <rect key="frame" x="78" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="2" backgroundImage="Image">
+                                <state key="normal" title="2" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -318,9 +323,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5N-Dp-Ar2">
-                                <rect key="frame" x="129" y="331" width="25" height="24"/>
+                                <rect key="frame" x="115" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="3" backgroundImage="Image">
+                                <state key="normal" title="3" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -328,9 +333,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbq-7y-hwA">
-                                <rect key="frame" x="162" y="331" width="25" height="24"/>
+                                <rect key="frame" x="152" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="4" backgroundImage="Image">
+                                <state key="normal" title="4" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -338,9 +343,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enp-X0-izE">
-                                <rect key="frame" x="192" y="331" width="25" height="24"/>
+                                <rect key="frame" x="189" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="5" backgroundImage="Image">
+                                <state key="normal" title="5" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -348,9 +353,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba4-VE-FmB">
-                                <rect key="frame" x="222" y="331" width="25" height="24"/>
+                                <rect key="frame" x="226" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="6" backgroundImage="Image">
+                                <state key="normal" title="6" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -358,9 +363,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-Ei-Hbf">
-                                <rect key="frame" x="255" y="331" width="25" height="24"/>
+                                <rect key="frame" x="262" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="7" backgroundImage="Image">
+                                <state key="normal" title="7" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -368,9 +373,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjI-Xi-UIG">
-                                <rect key="frame" x="285" y="331" width="25" height="24"/>
+                                <rect key="frame" x="300" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="8" backgroundImage="Image">
+                                <state key="normal" title="8" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -378,9 +383,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcj-FE-jkF">
-                                <rect key="frame" x="313" y="331" width="25" height="24"/>
+                                <rect key="frame" x="337" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="9" backgroundImage="Image">
+                                <state key="normal" title="9" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -388,23 +393,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyT-9g-WSz">
-                                <rect key="frame" x="37" y="331" width="25" height="24"/>
+                                <rect key="frame" x="3" y="386" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="0" backgroundImage="Image">
+                                <state key="normal" title="0" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="printInfo:" destination="vzc-cj-2LY" eventType="touchUpInside" id="Uyt-lN-cHv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="转换结果" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sIe-uL-7Al">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="sIe-uL-7Al">
                                 <rect key="frame" x="19" y="107" width="335" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6st-zq-soM">
-                                <rect key="frame" x="307" y="549" width="48" height="47"/>
+                                <rect key="frame" x="280" y="515" width="35" height="35"/>
                                 <state key="normal" title="m" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -412,8 +417,17 @@
                                     <action selector="printInfo:" destination="vzc-cj-2LY" eventType="touchUpInside" id="eRh-QQ-7fQ"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAg-LQ-JPk">
+                                <rect key="frame" x="19" y="180" width="335" height="76"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vzc-cj-2LY" id="1dC-kW-rfA"/>
+                                    <outlet property="delegate" destination="vzc-cj-2LY" id="EtB-Zy-nQV"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="中文" image="tabBarItem1" id="cib-bh-vOk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -440,36 +454,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-gP-tUE">
-                                <rect key="frame" x="163" y="266" width="47" height="47"/>
+                                <rect key="frame" x="147" y="282" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Switch" backgroundImage="Image"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Switch" backgroundImage="Image-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="switchFromWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg4-YV-Gmg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZs-ls-Ox6">
-                                <rect key="frame" x="275" y="266" width="47" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Clean" backgroundImage="Image"/>
-                                <connections>
-                                    <action selector="cleanAllInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5FL-g0-TdS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efk-a3-9e8">
-                                <rect key="frame" x="51" y="266" width="47" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <state key="normal" title="Code" backgroundImage="Image"/>
+                                <rect key="frame" x="43" y="282" width="80" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Code" backgroundImage="Image-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请输入" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-kX-yIX">
-                                <rect key="frame" x="20" y="28" width="335" height="51"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-kX-yIX">
+                                <rect key="frame" x="19" y="44" width="335" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpE-DX-X1v">
-                                <rect key="frame" x="302" y="370" width="48" height="47"/>
-                                <state key="normal" title="f" backgroundImage="Image">
+                                <rect key="frame" x="137" y="470" width="35" height="35"/>
+                                <state key="normal" title="f" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -477,8 +487,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyX-Nr-6v2">
-                                <rect key="frame" x="50" y="420" width="48" height="47"/>
-                                <state key="normal" title="g" backgroundImage="Image">
+                                <rect key="frame" x="175" y="470" width="35" height="35"/>
+                                <state key="normal" title="g" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -486,8 +496,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jj5-Gn-fte">
-                                <rect key="frame" x="107" y="420" width="48" height="47"/>
-                                <state key="normal" title="h" backgroundImage="Image">
+                                <rect key="frame" x="213" y="470" width="35" height="35"/>
+                                <state key="normal" title="h" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -495,8 +505,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYZ-SL-OZC">
-                                <rect key="frame" x="162" y="420" width="48" height="47"/>
-                                <state key="normal" title="i" backgroundImage="Image">
+                                <rect key="frame" x="262" y="427" width="35" height="35"/>
+                                <state key="normal" title="i" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -504,8 +514,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-dx-73t">
-                                <rect key="frame" x="219" y="420" width="48" height="47"/>
-                                <state key="normal" title="j" backgroundImage="Image">
+                                <rect key="frame" x="250" y="470" width="35" height="35"/>
+                                <state key="normal" title="j" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -513,26 +523,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-jb-Dnd">
-                                <rect key="frame" x="276" y="420" width="48" height="47"/>
-                                <state key="normal" title="k" backgroundImage="Image">
+                                <rect key="frame" x="283" y="470" width="35" height="35"/>
+                                <state key="normal" title="k" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="printInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWT-ky-V9v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-ZX-Wp3">
-                                <rect key="frame" x="304" y="470" width="48" height="47"/>
-                                <state key="normal" title="q" backgroundImage="Image">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="printInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXW-6d-bKr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASJ-WD-cne">
-                                <rect key="frame" x="53" y="518" width="48" height="47"/>
-                                <state key="normal" title="r" backgroundImage="Image">
+                                <rect key="frame" x="116" y="427" width="35" height="35"/>
+                                <state key="normal" title="r" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -540,8 +541,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-Ms-WWA">
-                                <rect key="frame" x="109" y="518" width="48" height="47"/>
-                                <state key="normal" title="s" backgroundImage="Image">
+                                <rect key="frame" x="66" y="470" width="35" height="35"/>
+                                <state key="normal" title="s" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -549,8 +550,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bii-Ik-Tcb">
-                                <rect key="frame" x="220" y="518" width="48" height="47"/>
-                                <state key="normal" title="u" backgroundImage="Image">
+                                <rect key="frame" x="224" y="427" width="35" height="35"/>
+                                <state key="normal" title="u" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -558,8 +559,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIW-rK-fla">
-                                <rect key="frame" x="276" y="518" width="48" height="47"/>
-                                <state key="normal" title="v" backgroundImage="Image">
+                                <rect key="frame" x="175" y="513" width="35" height="35"/>
+                                <state key="normal" title="v" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -567,8 +568,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEZ-2w-XfM">
-                                <rect key="frame" x="80" y="563" width="48" height="47"/>
-                                <state key="normal" title="w" backgroundImage="Image">
+                                <rect key="frame" x="43" y="427" width="35" height="35"/>
+                                <state key="normal" title="w" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -576,8 +577,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-bU-NKz">
-                                <rect key="frame" x="136" y="563" width="48" height="47"/>
-                                <state key="normal" title="x" backgroundImage="Image">
+                                <rect key="frame" x="102" y="513" width="35" height="35"/>
+                                <state key="normal" title="x" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -585,8 +586,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-Ic-9o7">
-                                <rect key="frame" x="164" y="518" width="48" height="47"/>
-                                <state key="normal" title="t" backgroundImage="Image">
+                                <rect key="frame" x="152" y="427" width="35" height="35"/>
+                                <state key="normal" title="t" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -594,8 +595,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDt-gf-kQB">
-                                <rect key="frame" x="192" y="563" width="48" height="47"/>
-                                <state key="normal" title="y" backgroundImage="Image">
+                                <rect key="frame" x="187" y="427" width="35" height="35"/>
+                                <state key="normal" title="y" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -603,8 +604,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZL-HS-sio">
-                                <rect key="frame" x="22" y="470" width="48" height="47"/>
-                                <state key="normal" title="l" backgroundImage="Image">
+                                <rect key="frame" x="319" y="470" width="35" height="35"/>
+                                <state key="normal" title="l" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -612,8 +613,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-cq-APY">
-                                <rect key="frame" x="78" y="470" width="48" height="47"/>
-                                <state key="normal" title="m" backgroundImage="Image">
+                                <rect key="frame" x="283" y="513" width="35" height="35"/>
+                                <state key="normal" title="m" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -621,8 +622,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adu-C1-q2b">
-                                <rect key="frame" x="134" y="470" width="48" height="47"/>
-                                <state key="normal" title="n" backgroundImage="Image">
+                                <rect key="frame" x="250" y="513" width="35" height="35"/>
+                                <state key="normal" title="n" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -630,8 +631,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmQ-Tz-487">
-                                <rect key="frame" x="192" y="470" width="48" height="47"/>
-                                <state key="normal" title="o" backgroundImage="Image">
+                                <rect key="frame" x="298" y="427" width="35" height="35"/>
+                                <state key="normal" title="o" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -639,8 +640,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttd-Ef-b15">
-                                <rect key="frame" x="80" y="370" width="47" height="47"/>
-                                <state key="normal" title="b" backgroundImage="Image">
+                                <rect key="frame" x="213" y="513" width="35" height="35"/>
+                                <state key="normal" title="b" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -648,8 +649,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUe-ds-Q5o">
-                                <rect key="frame" x="136" y="370" width="48" height="47"/>
-                                <state key="normal" title="c" backgroundImage="Image">
+                                <rect key="frame" x="137" y="513" width="35" height="35"/>
+                                <state key="normal" title="c" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -657,8 +658,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCP-pg-bNd">
-                                <rect key="frame" x="192" y="370" width="48" height="47"/>
-                                <state key="normal" title="d" backgroundImage="Image">
+                                <rect key="frame" x="102" y="470" width="35" height="35"/>
+                                <state key="normal" title="d" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -666,8 +667,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pot-zF-Idl">
-                                <rect key="frame" x="248" y="370" width="48" height="47"/>
-                                <state key="normal" title="e" backgroundImage="Image">
+                                <rect key="frame" x="81" y="427" width="35" height="35"/>
+                                <state key="normal" title="e" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -675,9 +676,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pde-6W-OYr">
-                                <rect key="frame" x="24" y="370" width="48" height="47"/>
+                                <rect key="frame" x="25" y="470" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="a" backgroundImage="Image">
+                                <state key="normal" title="a" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -685,8 +686,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gm-X0-0wA">
-                                <rect key="frame" x="248" y="470" width="48" height="47"/>
-                                <state key="normal" title="p" backgroundImage="Image">
+                                <rect key="frame" x="334" y="427" width="35" height="35"/>
+                                <state key="normal" title="p" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -694,8 +695,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZF-pB-jb1">
-                                <rect key="frame" x="248" y="563" width="48" height="47"/>
-                                <state key="normal" title="z" backgroundImage="Image">
+                                <rect key="frame" x="66" y="513" width="35" height="35"/>
+                                <state key="normal" title="z" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -703,16 +704,18 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUQ-r3-cf3">
-                                <rect key="frame" x="19" y="180" width="335" height="59"/>
+                                <rect key="frame" x="17" y="184" width="335" height="67"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="PXM-rs-fGg"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Gn1-5j-soJ"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-IH-Tdj">
-                                <rect key="frame" x="68" y="338" width="25" height="24"/>
+                                <rect key="frame" x="43" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="1" backgroundImage="Image">
+                                <state key="normal" title="1" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -720,9 +723,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veV-HE-Kag">
-                                <rect key="frame" x="98" y="338" width="25" height="24"/>
+                                <rect key="frame" x="81" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="2" backgroundImage="Image">
+                                <state key="normal" title="2" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -730,9 +733,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSr-FU-x4X">
-                                <rect key="frame" x="128" y="338" width="25" height="24"/>
+                                <rect key="frame" x="116" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="3" backgroundImage="Image">
+                                <state key="normal" title="3" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -740,9 +743,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="985-0I-ipC">
-                                <rect key="frame" x="161" y="338" width="25" height="24"/>
+                                <rect key="frame" x="152" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="4" backgroundImage="Image">
+                                <state key="normal" title="4" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -750,9 +753,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1g-LS-O1l">
-                                <rect key="frame" x="191" y="338" width="25" height="24"/>
+                                <rect key="frame" x="187" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="5" backgroundImage="Image">
+                                <state key="normal" title="5" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -760,9 +763,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkY-R8-1Nv">
-                                <rect key="frame" x="221" y="338" width="25" height="24"/>
+                                <rect key="frame" x="224" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="6" backgroundImage="Image">
+                                <state key="normal" title="6" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -770,9 +773,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-qZ-oQv">
-                                <rect key="frame" x="254" y="338" width="25" height="24"/>
+                                <rect key="frame" x="262" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="7" backgroundImage="Image">
+                                <state key="normal" title="7" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -780,9 +783,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM5-wr-VRy">
-                                <rect key="frame" x="284" y="338" width="25" height="24"/>
+                                <rect key="frame" x="298" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="8" backgroundImage="Image">
+                                <state key="normal" title="8" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -790,9 +793,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFb-km-e7y">
-                                <rect key="frame" x="312" y="338" width="25" height="24"/>
+                                <rect key="frame" x="334" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="9" backgroundImage="Image">
+                                <state key="normal" title="9" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -800,22 +803,41 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idz-3g-kQV">
-                                <rect key="frame" x="36" y="338" width="25" height="24"/>
+                                <rect key="frame" x="7" y="384" width="35" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="0" backgroundImage="Image">
+                                <state key="normal" title="0" backgroundImage="Image-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="printInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDe-wW-23a"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="转换结果" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wyS-pM-64K">
-                                <rect key="frame" x="20" y="105" width="335" height="46"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Result" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wyS-pM-64K">
+                                <rect key="frame" x="20" y="110" width="335" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVT-ZX-Wp3">
+                                <rect key="frame" x="7" y="427" width="35" height="35"/>
+                                <state key="normal" title="q" backgroundImage="Image-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXW-6d-bKr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZs-ls-Ox6">
+                                <rect key="frame" x="253" y="282" width="80" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clean" backgroundImage="Image-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cleanAllInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5FL-g0-TdS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -829,12 +851,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-912.5" y="-887.5"/>
+            <point key="canvasLocation" x="-529.5" y="-1628.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="245" height="245"/>
-        <image name="Image-1" width="121" height="121"/>
+        <image name="Image-1" width="124" height="124"/>
         <image name="tabBarItem1" width="24" height="24"/>
         <image name="tabBarItem2" width="24" height="24"/>
     </resources>
